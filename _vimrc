@@ -10,6 +10,8 @@ set autoindent
 set smartindent
 set tabstop=4
 set autochdir
+" 打开javascript对dom、html和css的支持
+let javascript_enable_domhtmlcss=1
 
 set shiftwidth=4
 set foldmethod=manual
@@ -65,7 +67,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My bundles here:
@@ -77,9 +79,13 @@ Bundle 'gmarik/vundle'
 " Bundle 'tpope/vim-rails.git'
 " 配色
 Bundle 'sickill/vim-monokai.git'
+" javascript.vim
+Bundle 'javascript.vim'
 " 迄今位置最好的自动VIM自动补全插件了吧
 " Vundle的这个写法，是直接取该插件在Github上的repo
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
+" SuperTab与Youcompleteme冲突
+Bundle 'SuperTab'
 " 相较于Command-T等查找文件的插件，ctrlp.vim最大的好处在于没有依赖，干净利落
 Bundle 'ctrlp.vim'
 " 在输入()，""等需要配对的符号时，自动帮你补全剩余半个
@@ -104,7 +110,8 @@ Bundle 'The-NERD-Commenter'
 Bundle 'UltiSnips'
 " 让代码更加易于纵向排版，以=或,符号对齐
 Bundle 'Tabular'
-
+" jQuery 关键词高亮
+Bundle 'jQuery'
 " vim-scripts repos
 
 " non-GitHub repos
