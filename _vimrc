@@ -83,9 +83,9 @@ Bundle 'sickill/vim-monokai.git'
 Bundle 'javascript.vim'
 " 迄今位置最好的自动VIM自动补全插件了吧
 " Vundle的这个写法，是直接取该插件在Github上的repo
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 " SuperTab与Youcompleteme冲突
-Bundle 'SuperTab'
+" Bundle 'SuperTab'
 " 相较于Command-T等查找文件的插件，ctrlp.vim最大的好处在于没有依赖，干净利落
 Bundle 'ctrlp.vim'
 " 在输入()，""等需要配对的符号时，自动帮你补全剩余半个
